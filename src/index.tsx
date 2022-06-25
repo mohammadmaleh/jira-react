@@ -2,18 +2,14 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import './index.css'
-import App from './App'
+import './index.scss'
+import Router from './router'
 import reportWebVitals from './reportWebVitals'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
   <React.StrictMode>
-    <App
-      test={function (): void {
-        throw new Error('Function not implemented.')
-      }}
-    />
+    <Router />
   </React.StrictMode>
 )
 

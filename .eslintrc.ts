@@ -5,6 +5,11 @@ module.exports = {
   parserOptions: {
     project: './tsconfig.json',
   },
+  compilerOptions: {
+    paths: {
+      '@mui/styled-engine': ['./node_modules/@mui/styled-engine-sc'],
+    },
+  },
   settings: {
     'import/resolver': {
       typescript: {
