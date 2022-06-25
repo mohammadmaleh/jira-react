@@ -1,13 +1,14 @@
-import React from 'react'
-import './App.css'
-import logo from './logo.svg'
+import React from 'react';
+import './App.css';
 
 interface AppProperties {
-  test(): void
+  test(): void;
 }
 
+import logo from './logo.svg';
+
 function App({ test }: AppProperties) {
-  console.log({ test })
+  console.log({ test });
   return (
     <div className="App">
       <header className="App-header">
@@ -19,13 +20,12 @@ function App({ test }: AppProperties) {
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
-          rel="noopener noreferrer"
-        >
+          rel="noopener noreferrer">
           Learn React
         </a>
       </header>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

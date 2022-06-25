@@ -1,10 +1,11 @@
 import React from 'react'
 import './App.css'
-import logo from './logo.svg'
 
 interface AppProperties {
   test(): void
 }
+
+import logo from './logo.svg'
 
 function App({ test }: AppProperties) {
   console.log({ test })
