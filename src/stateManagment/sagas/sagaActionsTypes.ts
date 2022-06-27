@@ -1,0 +1,1 @@
+export const LOGIN_ASYNC_SAGA = 'LOGIN_ASYNC_SAGA'

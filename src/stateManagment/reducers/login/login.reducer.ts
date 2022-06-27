@@ -5,30 +5,29 @@ export type IUser = {
   email: string
   isAdmin: boolean
 }
+
 export type ILogin = {
   isLoggedIn: boolean
   user: IUser | null
-  counter: number
 }
+
 const initialState: ILogin = {
   isLoggedIn: false,
   user: null,
-  counter: 0,
 }
+
 export const counterSlice = createSlice({
   name: 'login',
   initialState,
   reducers: {
-    increment: (state: ILogin) => {
-      state.counter++
-    },
-    decrement: (state: ILogin) => {
-      state.counter--
+    login: (state: ILogin, action: { payload: IUser }) => {
+      state.isLoggedIn = true
+      state.user = action.payload
     },
   },
 })
 
 // Action creators are generated for each case reducer function
-export const { increment, decrement } = counterSlice.actions
+export const { login } = counterSlice.actions
 
 export default counterSlice.reducer

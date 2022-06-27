@@ -15,6 +15,10 @@ module.exports = {
       typescript: {
         alwaysTryTypes: true,
       },
+      node: {
+        paths: ['src'],
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      },
     },
   },
   rules: {
