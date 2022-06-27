@@ -7,7 +7,6 @@ interface AppProperties {
 }
 
 function App({ test }: AppProperties) {
-  console.log({ test })
   return (
     <div className="App">
       <HelloWorld></HelloWorld>;
